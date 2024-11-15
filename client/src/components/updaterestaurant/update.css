@@ -1,0 +1,125 @@
+/* Basic CSS styling for the form */
+div {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    background: linear-gradient(90deg, #cbebe9b8, #84a2fbb4);
+    display: inline-flex;
+    border-radius: 14px;
+    font-style: initial;
+}
+
+body {
+    background-image: url('./WhatsApp\ Image\ 2024-11-15\ at\ 11.48.55_1f217365.jpg');
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #f9f9f947;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+/* Flexbox for each label and input container */
+form div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    font-weight: bold;
+    color: #f7f7f7;
+    margin-right: 10px;
+    min-width: 30%;
+}
+
+input[type='text'],
+input[type='Number'] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    outline: none;
+    box-sizing: border-box;
+    max-width: calc(70% - 15px);
+}
+
+input[type='text']:focus,
+input[type='Number']:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+input::placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+input:hover::placeholder {
+    opacity: 1;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+button[type='submit'] {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #cbebe9b8, #84a2fbb4);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+button[type='submit']:hover {
+    background-color: #0056b3;
+}
+
+button[type='submit']:active {
+    background-color: #004494;
+}
+
+/* Link styling to match button size */
+.Link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #cbebe9b8, #84a2fbb4);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.Link:hover {
+    background-color: #ff0404;
+}
+
+.Link:active {
+    background-color: #e2f0fe;
+}
